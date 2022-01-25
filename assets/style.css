@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.featurette-divider{
+    margin: 5rem 0;
+}
+
+header{
+    background-color: #4a4a4a;
+    height: 76px;
+}
+header nav{
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+}
+header nav .navbar-brand{
+    display: flex;
+    align-items: center;
+}
+header nav .navbar-brand p {
+    margin: 0;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 2px solid;
+}
+header nav .navbar-brand img {
+    user-select: none;
+    pointer-events: none;
+    height: 50px;
+}
+header nav #navbarCollapse li.nav-item {
+    position: relative;
+}
+header nav #navbarCollapse li.nav-item:hover a {
+    color: #fff;
+    transition: all 0.3s ease-out;
+}
+header nav #navbarCollapse li.nav-item::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #57aeff;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header nav #navbarCollapse li.nav-item:hover::after{
+    width: 100%;
+}
+header nav #navbarCollapse .input-group {
+    align-items: center; 
+    width: 170px;
+}
+main{
+    background: #eee;
+}
+main #myCarousel {
+     margin-bottom: 5rem; 
+}
+main #myCarousel .carousel-inner{
+    /*background: #b3eba5;*/
+    background: url('./images/bg-beranda.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+main #myCarousel .carousel-inner .carousel-item{
+    min-height: 34rem;
+}
+main #myCarousel .carousel-inner .carousel-item .carousel-caption{
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    max-width: 700px;
+    margin: auto;
+    background: rgba(0,0,0, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    color: #fff;
+    padding: 20px;   
+}
+
+main #myCarousel .carousel-inner .carousel-item .carousel-caption button{
+    background: none;
+    border: 1px solid #fff;
+    background: transparent;
+    transition: 0.3s ease-out;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+main #myCarousel .carousel-inner .carousel-item .carousel-caption button:hover{
+    color: #fff;
+    background: #57aeff;
+    border: 1px solid #57aeff;
+}
+main .info-wrapper{
+    margin-top: 5rem;
+}
+main .info-wrapper .info-caption {
+    display: flex;
+    align-items: flex-start;
+}
+main .info-wrapper .info-caption i{
+    font-size: 40px;
+    margin-right: 20px;
+    display: flex;
+}
+main .info-wrapper .info-caption > div h2{
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+}
+main .info-wrapper .info-caption > div p{
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+main.general-page .info-wrapper .info-caption{
+    display: flex;
+    justify-content: center;
+}
+main.general-page .info-wrapper .info-caption > div h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+main.general-page .info-wrapper .info-caption > div p{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+main .main-content img{
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+main .main-content .wrap-star{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fecd33;
+    background: rgba(0,0,0,0.5);
+    padding: 5px;
+    backdrop-filter: blur(2px);
+    display: flex;
+    user-select: none;
+}
+main .main-content .wrap-star p{
+    margin: 0;
+    margin-left: 5px;
+}
+main .main-content button{
+    background: none;
+    border: 1px solid #57aeff;
+    background: transparent;
+    transition: 0.3s ease-out;
+    padding: 5px 10px;
+    color: #57aeff;
+    border-radius: 5px;
+}
+main .main-content button.icon{
+    width: 35px;
+    height: 35px;
+    padding: 0;
+}
+main .main-content button:hover{
+    color: #fff;
+    background: #57aeff;
+    border: 1px solid #57aeff;
+}
+main .main-content .progress{
+    min-height: 2rem;
+    margin-bottom: 0.5rem;
+}
+main .main-content .progress label{
+    min-width: 65px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+main .main-content .progress span{
+    min-width: 15px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+main .main-content .card{
+    overflow: hidden;
+}
+main .main-content.gallery .card:hover .card-body{
+    bottom: 0;
+    opacity: 1;
+}
+main .main-content.gallery .card .card-body{
+    background: rgba(0,0,0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: -64px;
+    right: 0;
+    transition: 0.3s all ease-out;
+    opacity: 0;
+    color: #fff;
+}
+main .main-content iframe{
+    width: 100%;
+}
+
+main .main-content textarea{
+    min-height: 294px;
+    max-height: 294px;
+}
+main.general-page .main-content img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    object-position: top;
+}
+
+#dialog-preview-pandawa iframe{
+    width: 100%;
+}
+
+footer{
+    margin-bottom: 0;
+    padding-bottom: 5rem;
+}
+
+footer p{
+    margin: 0;
+}
